@@ -1,0 +1,2808 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>sailor senshi attack generator</title>
+</head>
+
+<body background="back.gif" bgcolor="#000000" text="#FFFFFF"
+bgproperties="fixed" topmargin=0 bottomargin=0>
+<script language="JAVASCRIPT">
+
+<!--
+var AttackWords = new Array()
+var AttackCodes = new Array()
+var AttackTypes = new Array()
+var intCount = -1;
+
+AttackWords[++intCount]="Pressure"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*AIR*DESTRUCTIVE*WATER*WEATHER*"
+AttackWords[++intCount]="Ballista"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DESTRUCTIVE*GRAVITY*RANGED*"
+AttackWords[++intCount]="Sleep"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Dreamer"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Repose"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Slumber"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Unrest"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Tiring"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Exhausting"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Sleepless"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Turmoil"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Fatigue"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Faint"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Blackout"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Anaesthetic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Anaesthetics"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Fallout"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*DESERT*DESTRUCTIVE*"
+AttackWords[++intCount]="Insomnia"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Wide"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*"
+AttackWords[++intCount]="Shield"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*DEFENSE*"
+AttackWords[++intCount]="Wall"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*DEFENSE*GLASS*"
+AttackWords[++intCount]="Barrier"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*DEFENSE*"
+AttackWords[++intCount]="Blast"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*RANGED*SOUND*GLASS*"
+AttackWords[++intCount]="Sparkling"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*FIRE*LIGHT*WATER*GLASS*"
+AttackWords[++intCount]="Zap"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*ELECTRIC*RANGED*"
+AttackWords[++intCount]="Bubble"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*RANGED*WATER*GLASS*"
+AttackWords[++intCount]="Chain"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*METAL*WEB*"
+AttackWords[++intCount]="Fire"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Sniper"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*CLOSECOMBAT*"
+AttackWords[++intCount]="Gorgeous"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*BEAUTY*"
+AttackWords[++intCount]="Meditation"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Burning"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Mandala"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Sword"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*CLOSECOMBAT*METAL*CUTTING*"
+AttackWords[++intCount]="Blade"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*CLOSECOMBAT*METAL*CUTTING*"
+AttackWords[++intCount]="Scream"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*EVIL*SOUND*"
+AttackWords[++intCount]="Dead"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*EVIL*DESERT*"
+AttackWords[++intCount]="Shine"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*LIGHT*WATER*GLASS*"
+AttackWords[++intCount]="Illusion"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*LIGHT*MYSTIC*"
+AttackWords[++intCount]="Aqua"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WATER*COLOR*"
+AttackWords[++intCount]="Rhapsody"
+AttackCodes[intCount]=5
+AttackTypes[intCount]="*SOUND*BEAUTY*MYSTIC*"
+AttackWords[++intCount]="Shock"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DESTRUCTIVE*ELECTRIC*RANGED"
+AttackWords[++intCount]="Super"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*"
+AttackWords[++intCount]="Shining"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*FIRE*LIGHT*METAL*GLASS*"
+AttackWords[++intCount]="Kick"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*CLOSECOMBAT*"
+AttackWords[++intCount]="Punch"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*CLOSECOMBAT*"
+AttackWords[++intCount]="Spin"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*CLOSECOMBAT*"
+AttackWords[++intCount]="Spinning"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*CLOSECOMBAT*"
+AttackWords[++intCount]="Neo"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Wings"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*AIR*RANGED*"
+AttackWords[++intCount]="God's"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*DIVINE*MYSTIC*"
+AttackWords[++intCount]="Angel"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Melting"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*FIRE*DESTRUCTIVE*"
+AttackWords[++intCount]="Kiss"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*BEAUTY*"
+AttackWords[++intCount]="Deep"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*"
+AttackWords[++intCount]="Submerge"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*DESTRUCTIVE*WATER*"
+AttackWords[++intCount]="All"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*RANGED*"
+AttackWords[++intCount]="Death"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DESTRUCTIVE*EVIL*"
+AttackWords[++intCount]="Revolution"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Cosmic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*SPACE*"
+AttackWords[++intCount]="Galaxy"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Star"
+AttackCodes[intCount]=7
+AttackTypes[intCount]="*GENERAL*FIRE*LIGHT*SPACE*"
+AttackWords[++intCount]="Multi"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*"
+AttackWords[++intCount]="Electro"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*ELECTRIC*G"
+AttackWords[++intCount]="Magnetic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*ELECTRIC*GRAVITY*"
+AttackWords[++intCount]="Fusion"
+AttackCodes[intCount]=5
+AttackTypes[intCount]="*GENERAL*GRAVITY*GLASS*"
+AttackWords[++intCount]="Sharp"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*METAL*"
+AttackWords[++intCount]="King"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*ROYALNOBLE*"
+AttackWords[++intCount]="Queen"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*ROYALNOBLE*"
+AttackWords[++intCount]="Royal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*ROYALNOBLE*"
+AttackWords[++intCount]="Curse"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DESTRUCTIVE*EVIL*MYSTIC*"
+AttackWords[++intCount]="Line"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*WEB*"
+AttackWords[++intCount]="Stream"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WATER*WEB*"
+AttackWords[++intCount]="Streamer"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*WEB*"
+AttackWords[++intCount]="Crescent"
+AttackCodes[intCount]=7
+AttackTypes[intCount]="*GENERAL*METAL*"
+AttackWords[++intCount]="Double"
+AttackCodes[intCount]=7
+AttackTypes[intCount]="*DESTRUCTIVE*"
+AttackWords[++intCount]="Soul"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DIVINE*MYSTIC*MENTAL*"
+AttackWords[++intCount]="Demon"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*EVIL*MYSTIC*"
+AttackWords[++intCount]="Burn"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Great"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*"
+AttackWords[++intCount]="Flare"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Bullet"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*METAL*RANGED*"
+AttackWords[++intCount]="Heart"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*BEAUTY*"
+AttackWords[++intCount]="Ache"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Rainbow"
+AttackCodes[intCount]=7
+AttackTypes[intCount]="*LIGHT*COLOR*"
+AttackWords[++intCount]="Slam"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*CLOSECOMBAT*GRAVITY*"
+AttackWords[++intCount]="Planet"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Dragon"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*RANGED*MYSTIC*"
+AttackWords[++intCount]="Demonic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*EVIL*"
+AttackWords[++intCount]="Angelic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*MYSTIC*"
+AttackWords[++intCount]="Holy"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*MYSTIC*"
+AttackWords[++intCount]="Unholy"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*EVIL*"
+AttackWords[++intCount]="Cursed"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*EVIL*"
+AttackWords[++intCount]="Blessed"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*MYSTIC*"
+AttackWords[++intCount]="Red"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*COLOR*"
+AttackWords[++intCount]="Crimson"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*COLOR*"
+AttackWords[++intCount]="Blue"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*COLDICE*COLOR*"
+AttackWords[++intCount]="Black"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*EVIL*SPACE*COLOR*"
+AttackWords[++intCount]="White"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*COLOR*"
+AttackWords[++intCount]="Gold"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*METAL*COLOR*"
+AttackWords[++intCount]="Silver"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*METAL*COLOR*"
+AttackWords[++intCount]="Cover"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*"
+AttackWords[++intCount]="Aegis"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DEFENSE*"
+AttackWords[++intCount]="Azure"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Cerulean"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Turqoise"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Cobalt"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Teal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Cherry"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*PLANTS*"
+AttackWords[++intCount]="Scarlet"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Rose"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*PLANTS"
+AttackWords[++intCount]="Verdant"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Snowy"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*COLDICE*"
+AttackWords[++intCount]="Ivory"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Bleached"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Ebony"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Orange"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Yellow"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Saffron"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Lemon"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Lime"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Purple"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Indigo"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Blacklight"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Magenta"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Fuscia"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Glassy"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WATER*GLASS*"
+AttackWords[++intCount]="Glossy"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WATER*GLASS*"
+AttackWords[++intCount]="Gossimer"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MYSTIC*WEB*"
+AttackWords[++intCount]="Butterfly"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Ephemeral"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Surreal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Front"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*"
+AttackWords[++intCount]="Fury"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MENTAL*DESTRUCTIVE*"
+AttackWords[++intCount]="Assault"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*"
+AttackWords[++intCount]="Diamond"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*GLASS*"
+AttackWords[++intCount]="Gem"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Jewel"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Pearl"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Amethyst"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Topaz"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Opal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Quartz"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Pale"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Magnet"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*ELECTRIC*GRAVITY*"
+AttackWords[++intCount]="Grey"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Ash"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Ancient"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Razor"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*CUTTING*METAL*GLASS*"
+AttackWords[++intCount]="Zodiac"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Redshift"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLOR*SPACE*"
+AttackWords[++intCount]="Supernova"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Hole"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*EARTH*SPACE*"
+AttackWords[++intCount]="System"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Entropy"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Interstellar"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Nimbus"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Galactic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Cumulus"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Cirrus"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Under"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*EVIL*"
+AttackWords[++intCount]="Foam"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*WATER*"
+AttackWords[++intCount]="Foamy"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*AIR*WATER*"
+AttackWords[++intCount]="Smoke"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*LIGHT*"
+AttackWords[++intCount]="Smokey"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*AIR*LIGHT*"
+AttackWords[++intCount]="Cloud"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Fog"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Pure"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Golden"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*METAL*COLOR*"
+AttackWords[++intCount]="Wind"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*AIR*RANGED*WEATHER*"
+AttackWords[++intCount]="Flower"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*BEAUTY*PLANTS*"
+AttackWords[++intCount]="Blossom"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Jungle"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Wood"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Metal"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*METAL*"
+AttackWords[++intCount]="Water"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*WEATHER*"
+AttackWords[++intCount]="Storm"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*WEATHER*"
+AttackWords[++intCount]="Tornado"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*WATER*WEATHER*"
+AttackWords[++intCount]="Hurricane"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*WATER*WEATHER*"
+AttackWords[++intCount]="Tsunami"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*AIR*WATER*WEATHER*"
+AttackWords[++intCount]="Lightning"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*ELECTRIC*WEATHER*"
+AttackWords[++intCount]="Thunder"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*ELECTRIC*WEATHER*"
+AttackWords[++intCount]="Hero"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*ROYALNOBLE*"
+AttackWords[++intCount]="Heroic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*ROYALNOBLE*"
+AttackWords[++intCount]="Blaster"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*RANGED*"
+AttackWords[++intCount]="Bow"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*RANGED*"
+AttackWords[++intCount]="Cannon"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*DESTRUCTIVE*RANGED*"
+AttackWords[++intCount]="Galactic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Final"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*"
+AttackWords[++intCount]="Fatal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*"
+AttackWords[++intCount]="Ultimate"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*"
+AttackWords[++intCount]="Caress"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*BEAUTY*"
+AttackWords[++intCount]="Inferno"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*EVIL*FIRE*"
+AttackWords[++intCount]="Buster"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*RANGED*"
+AttackWords[++intCount]="Prince"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*ROYALNOBLE*"
+AttackWords[++intCount]="Princess"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*ROYALNOBLE*"
+AttackWords[++intCount]="Noble"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*ROYALNOBLE*"
+AttackWords[++intCount]="Grand"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*DESTRUCTIVE*ROYALNOBLE*GRAVITY*"
+AttackWords[++intCount]="Knight"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*ROYALNOBLE*"
+AttackWords[++intCount]="Fist"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*CLOSECOMBAT*"
+AttackWords[++intCount]="Touch"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*CLOSECOMBAT*BEAUTY*"
+AttackWords[++intCount]="Sky"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*SPACE*WEATHER*"
+AttackWords[++intCount]="Gyre"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*WATER*"
+AttackWords[++intCount]="Doldrum"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*WATER*"
+AttackWords[++intCount]="Pretty"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*BEAUTY*"
+AttackWords[++intCount]="Beautiful"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*BEAUTY*"
+AttackWords[++intCount]="Sugar"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*BEAUTY*"
+AttackWords[++intCount]="Molten"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Earth"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*EARTH*"
+AttackWords[++intCount]="Ground"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*EARTH*"
+AttackWords[++intCount]="Quake"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*EARTH*"
+AttackWords[++intCount]="Tremor"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DESTRUCTIVE*EARTH*"
+AttackWords[++intCount]="Slave"
+AttackCodes[intCount]=7
+AttackTypes[intCount]="*EVIL*DESTRUCTIVE*"
+AttackWords[++intCount]="Lovely"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*BEAUTY*"
+AttackWords[++intCount]="Fang"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*CLOSECOMBAT*POISON*"
+AttackWords[++intCount]="Claw"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*CLOSECOMBAT*CUTTING*"
+AttackWords[++intCount]="Phoenix"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*DIVINE*FIRE*MYSTIC*ROYALNOBLE*"
+AttackWords[++intCount]="Steel"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*METAL*"
+AttackWords[++intCount]="Thorn"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*POISON*GLASS*"
+AttackWords[++intCount]="Leaf"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Thrust"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Green"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*PLANTS*COLOR*"
+AttackWords[++intCount]="Gale"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*AIR*WEATHER*"
+AttackWords[++intCount]="Blizzard"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*WEATHER*COLDICE*"
+AttackWords[++intCount]="Rain"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*WEATHER*GLASS*WEB*"
+AttackWords[++intCount]="Typhoon"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*AIR*WEATHER*"
+AttackWords[++intCount]="Volcano"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*EARTH*FIRE*"
+AttackWords[++intCount]="Volcanic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*EARTH*FIRE*"
+AttackWords[++intCount]="Heavenly"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*BEAUTY*"
+AttackWords[++intCount]="Glow"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Glowing"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*GLASS*"
+AttackWords[++intCount]="Luminous"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Ray"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*RANGED*LIGHT*"
+AttackWords[++intCount]="Bolt"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*RANGED*"
+AttackWords[++intCount]="Flare"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*FIRE*LIGHT*"
+AttackWords[++intCount]="Spindle"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WIND*POISON*GLASS*WEB*"
+AttackWords[++intCount]="Poison"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*POISON*"
+AttackWords[++intCount]="Fetid"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*POISON*"
+AttackWords[++intCount]="Toxic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*POISON*"
+AttackWords[++intCount]="Aurora"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*LIGHT*WEATHER*"
+AttackWords[++intCount]="Aura"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*LIGHT*MYSTIC*"
+AttackWords[++intCount]="Meteor"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*FIRE*SPACE*"
+AttackWords[++intCount]="Light"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Pyro"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Energy"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*ELECTRIC*LIGHT*"
+AttackWords[++intCount]="Electric"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*ELECTRIC*"
+AttackWords[++intCount]="Terra"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*EARTH*"
+AttackWords[++intCount]="Spark"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*EVIL*FIRE*ELECTRIC*"
+AttackWords[++intCount]="Blaze"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*FIRE*"
+AttackWords[++intCount]="Hot"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Brave"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*ROYALNOBLE*"
+AttackWords[++intCount]="True"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DIVINE*MYSTIC*ROYALNOBLE*"
+AttackWords[++intCount]="Perfect"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DIVINE*"
+AttackWords[++intCount]="Seduction"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*EVIL*BEAUTY*"
+AttackWords[++intCount]="Metallic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*METAL*"
+AttackWords[++intCount]="Gleaming"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*METAL*GLASS*"
+AttackWords[++intCount]="Ghost"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*MYSTIC*"
+AttackWords[++intCount]="Ghostly"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*MYSTIC*"
+AttackWords[++intCount]="Spirit"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*MYSTIC*MENTAL*"
+AttackWords[++intCount]="Chant"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*MYSTIC*"
+AttackWords[++intCount]="Charm"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*BEAUTY*MYSTIC*"
+AttackWords[++intCount]="Spell"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*MYSTIC*"
+AttackWords[++intCount]="Vine"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*PLANTS*WEB*"
+AttackWords[++intCount]="Primal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*PLANTS*DESTRUCTIVE*"
+AttackWords[++intCount]="Spray"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*RANGED*WATER*"
+AttackWords[++intCount]="Shard"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*METAL*GENERAL*COLDICE*GLASS*"
+AttackWords[++intCount]="Charge"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*CLOSECOMBAT*ELECTRIC*"
+AttackWords[++intCount]="Siege"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DESTRUCTIVE*RANGED*GRAVITY*"
+AttackWords[++intCount]="Volley"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*DESTRUCTIVE*RANGED*"
+AttackWords[++intCount]="Stroke"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*CLOSECOMBAT*"
+AttackWords[++intCount]="Blood"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DESTRUCTIVE*EVIL*"
+AttackWords[++intCount]="Hand"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*CLOSECOMBAT*"
+AttackWords[++intCount]="Emerald"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Ruby"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Sapphire"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*COLOR*"
+AttackWords[++intCount]="Cauldron"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*EVIL*FIRE*MYSTIC*COLOR*"
+AttackWords[++intCount]="Enchanted"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*MYSTIC*BEAUTY*"
+AttackWords[++intCount]="Evocation"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*DIVINE*MYSTIC*"
+AttackWords[++intCount]="Invocation"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*DIVINE*MYSTIC*"
+AttackWords[++intCount]="Summon"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*MYSTIC*"
+AttackWords[++intCount]="Vision"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*DIVINE*MYSTIC*"
+AttackWords[++intCount]="Quasar"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*SPACE*"
+AttackWords[++intCount]="Pulsar"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*GENERAL*SPACE*"
+AttackWords[++intCount]="Void"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*TIME*DESTRUCTIVE*SPACE*"
+AttackWords[++intCount]="Ether"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*GENERAL*MYSTIC*SPACE*"
+AttackWords[++intCount]="Ethereal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*SPACE*"
+AttackWords[++intCount]="Nebula"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*SPACE*COLOR*"
+AttackWords[++intCount]="Comet"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*SPACE*"
+AttackWords[++intCount]="Torrent"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*WATER*"
+AttackWords[++intCount]="Flood"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*WATER*WEATHER*"
+AttackWords[++intCount]="Cascade"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*WATER*"
+AttackWords[++intCount]="Crystal"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*COLOR*GLASS*"
+AttackWords[++intCount]="Arctic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*COLDICE*WEATHER*"
+AttackWords[++intCount]="Prism"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*GENERAL*LIGHT*COLOR*GLASS*"
+AttackWords[++intCount]="Spectrum"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*GENERAL*LIGHT*COLOR*"
+AttackWords[++intCount]="Spectral"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*LIGHT*COLOR*"
+AttackWords[++intCount]="Full"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*"
+AttackWords[++intCount]="Total"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*"
+AttackWords[++intCount]="Ice"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Glacial"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Frost"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Icicle"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Glacier"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Slash"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*CLOSECOMBAT*CUTTING*"
+AttackWords[++intCount]="Swipe"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*CLOSECOMBAT*"
+AttackWords[++intCount]="Mind"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MENTAL*"
+AttackWords[++intCount]="Psycho"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MENTAL*"
+AttackWords[++intCount]="Psychic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MENTAL*"
+AttackWords[++intCount]="Mental"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MENTAL*"
+AttackWords[++intCount]="Dream"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*MYSTIC*SLEEP*"
+AttackWords[++intCount]="Dreaming"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MYSTIC*SLEEP*"
+AttackWords[++intCount]="Ripper"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*CLOSECOMBAT*CUTTING*"
+AttackWords[++intCount]="Seed"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*PLANTS*GLASS*"
+AttackWords[++intCount]="Sylvan"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Root"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Forest"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Wing"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*AIR*DIVINE*"
+AttackWords[++intCount]="Feather"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*AIR*DIVINE*"
+AttackWords[++intCount]="Uni"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*MYSTIC*"
+AttackWords[++intCount]="Castle"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*ROYALNOBLE*"
+AttackWords[++intCount]="Bliss"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MYSTIC*DIVINE*"
+AttackWords[++intCount]="Blitz"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*LIGHT*ELECTRIC*RANGED*"
+AttackWords[++intCount]="Nova"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESTRUCTIVE*SPACE*"
+AttackWords[++intCount]="Well"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*TIME*DEFENSE*"
+AttackWords[++intCount]="Frozen"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Slider"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*CUTTING*METAL*GLASS*"
+AttackWords[++intCount]="Maze"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*DEFENSE*"
+AttackWords[++intCount]="Hazey"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*POISON*"
+AttackWords[++intCount]="Forbidden"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*EVIL*TIME*"
+AttackWords[++intCount]="Pour"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*WATER*DIVINE*POISON*"
+AttackWords[++intCount]="Kenetic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MENTAL*GRAVITY*"
+AttackWords[++intCount]="Pulse"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MENTAL*GRAVITY*"
+AttackWords[++intCount]="Rip"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*CLOSECOMBAT*CUTTING*"
+AttackWords[++intCount]="Wasteland"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Sand"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Sands"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*DESERT*"
+AttackWords[++intCount]="Shifting"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Sinking"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Dry"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Particle"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DESERT*LIGHT*COLOR*"
+AttackWords[++intCount]="Sink"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*GRAVITY*"
+AttackWords[++intCount]="Dune"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Desert"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Cavern"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*EARTH*"
+AttackWords[++intCount]="Pelting"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DESERT*DESTRUCTIVE*"
+AttackWords[++intCount]="Falling"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DESERT*"
+AttackWords[++intCount]="Sandy"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Barren"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Desolate"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Desolation"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Desperate"
+AttackCodes[intCount]=3
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Wild"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*DESERT*"
+AttackWords[++intCount]="Dust"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*GLASS*"
+AttackWords[++intCount]="Vale"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*COLOR*"
+AttackWords[++intCount]="Shatter"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*LIGHT*GLASS*DESERT*"
+AttackWords[++intCount]="Dome"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*GRAVITY*DEFENSE*GLASS*"
+AttackWords[++intCount]="Forsaken"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Lost"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Fading"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*DESERT*COLOR*"
+AttackWords[++intCount]="Cyclone"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*AIR*WEATHER*"
+AttackWords[++intCount]="Quicksand"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Beacon"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*LIGHT*"
+AttackWords[++intCount]="Oasis"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*WATER*"
+AttackWords[++intCount]="Spray"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*WATER*"
+AttackWords[++intCount]="Halo"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*LIGHT*WEATHER*"
+AttackWords[++intCount]="Choke"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*POISON*"
+AttackWords[++intCount]="Choking"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*POISON*"
+AttackWords[++intCount]="Mirage"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*WATER*LIGHT*COLOR*"
+AttackWords[++intCount]="Brilliant"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Wintry"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Recoil"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*COLDICE*"
+AttackWords[++intCount]="Piercing"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*LIGHT*"
+AttackWords[++intCount]="Suffocation"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*POISON*"
+AttackWords[++intCount]="Mana"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Mass"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*TIME*GRAVITY*"
+AttackWords[++intCount]="Twin"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Depidity"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*LIGHT*"
+AttackWords[++intCount]="Avulsion"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DESERT*LIGHT*POISON*GLASS*"
+AttackWords[++intCount]="Subterfuge"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*LIGHT*WATER*WEATHER*GRAVITY*"
+AttackWords[++intCount]="Sent"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Torture"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*DESTRUCTIVE*POISON*"
+AttackWords[++intCount]="Solar"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*LIGHT*"
+AttackWords[++intCount]="Sphere"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*LIGHT*GLASS*"
+AttackWords[++intCount]="Glitter"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*LIGHT*GLASS*"
+AttackWords[++intCount]="Shimmer"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*LIGHT*"
+AttackWords[++intCount]="Trick"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Shudder"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*POISON*"
+AttackWords[++intCount]="Shuddering"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLDICE*POISON*"
+AttackWords[++intCount]="Shiver"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*POISON*"
+AttackWords[++intCount]="Breath"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*COLDICE*DIVINE*AIR*GLASS*"
+AttackWords[++intCount]="Float"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*AIR*"
+AttackWords[++intCount]="Facet"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*LIGHT*GLASS*"
+AttackWords[++intCount]="Floating"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Twisted"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*GENERAL*"
+AttackWords[++intCount]="Reflection"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*LIGHT*GLASS*"
+AttackWords[++intCount]="Mirror"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*LIGHT*GENERAL*TIME*GLASS*"
+AttackWords[++intCount]="Reign"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESTRUCTIVE*TIME*"
+AttackWords[++intCount]="Needle"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*POISON*GLASS*WEB*"
+AttackWords[++intCount]="Omni"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Finale"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*SOUND*"
+AttackWords[++intCount]="Symphony"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*SOUND*"
+AttackWords[++intCount]="Ultraviolet"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Suffusion"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*LIGHT*DIVINE*GRAVITY*"
+AttackWords[++intCount]="Splash"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*GENERAL"
+AttackWords[++intCount]="Dance"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*SOUND*WEB*"
+AttackWords[++intCount]="Song"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Whisper"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*DIVINE*COLDICE*AIR*SOUND*"
+AttackWords[++intCount]="Dying"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*DESTRUCTIVE*POISON*SLEEP*"
+AttackWords[++intCount]="Marine"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WATER*"
+AttackWords[++intCount]="Visage"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Tempest"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*WEATHER*DESTRUCTIVE*TIME*"
+AttackWords[++intCount]="Flash"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Marrionette"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*WEB*"
+AttackWords[++intCount]="Tide"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*"
+AttackWords[++intCount]="Tidal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WATER*"
+AttackWords[++intCount]="Boomerang"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*GRAVITY*"
+AttackWords[++intCount]="Heaven's"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Hell's"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Shockwave"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*ELECTRICITY*"
+AttackWords[++intCount]="Prayer"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Righteous"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Judgement"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Explosion"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESTRUCTIVE*GLASS*"
+AttackWords[++intCount]="Confusion"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*POISON*"
+AttackWords[++intCount]="Ecliptic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SPACE*LIGHT*"
+AttackWords[++intCount]="Eclipse"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*LIGHT*"
+AttackWords[++intCount]="Crunch"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESTRUCTIVE*GRAVITY*"
+AttackWords[++intCount]="Orbit"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*GRAVITY*"
+AttackWords[++intCount]="Orbital"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SPACE*GRAVITY*"
+AttackWords[++intCount]="Spike"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*POISON*WEB*GLASS*"
+AttackWords[++intCount]="Morning"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SLEEP*TIME*"
+AttackWords[++intCount]="Twilight"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SLEEP*TIME*"
+AttackWords[++intCount]="Midnight"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SLEEP*TIME*"
+AttackWords[++intCount]="Dawn"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SLEEP*TIME*"
+AttackWords[++intCount]="Avalon"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Faerie"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Pixy"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Sprite"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Nymph"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Muse"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Steller"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Parallax"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Paradox"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*SPACE*"
+AttackWords[++intCount]="Shower"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESTRUCTIVE*WATER*GLASS*WEB*"
+AttackWords[++intCount]="Astral"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Hyper"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Super"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Overdrive"
+AttackCodes[intCount]=4
+AttackTypes[intCount]="*GENERAL*DESTRUCTIVE*"
+AttackWords[++intCount]="Crisis"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*DESTRUCTIVE*"
+AttackWords[++intCount]="Ripple"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*RANGED*WATER*"
+AttackWords[++intCount]="Circle"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*AIR*WATER*GLASS*WEB*"
+AttackWords[++intCount]="Sonar"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WATER*"
+AttackWords[++intCount]="Wave"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*"
+AttackWords[++intCount]="Hydro"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WATER*"
+AttackWords[++intCount]="Rising"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Rush"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Sonic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*WATER*SOUND*"
+AttackWords[++intCount]="Boom"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESTRUCTIVE*SOUND*"
+AttackWords[++intCount]="Repulse"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*TIME*SOUND*GRAVITY*"
+AttackWords[++intCount]="Eyes"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Echo"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Night"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*LIGHT*SLEEP*"
+AttackWords[++intCount]="Dark"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Shadow"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Sillhouette"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Shadowy"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Shade"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Overcast"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Blinding"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Pitch"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*COLOR*"
+AttackWords[++intCount]="Eternal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*SLEEP*"
+AttackWords[++intCount]="Eternity"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*TIME*SLEEP*"
+AttackWords[++intCount]="Everlasting"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*SLEEP*"
+AttackWords[++intCount]="Impact"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*TIME*DESTRUCTIVE*GENERAL*GRAVITY*"
+AttackWords[++intCount]="Time"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*SLEEP*"
+AttackWords[++intCount]="Web"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*DEFENSE*WEB*"
+AttackWords[++intCount]="Density"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*TIME*GRAVITY*"
+AttackWords[++intCount]="Supreme"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*"
+AttackWords[++intCount]="Gravity"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*TIME*GRAVITY*"
+AttackWords[++intCount]="Bust"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DESTRUCTIVE*GRAVITY*GLASS*"
+AttackWords[++intCount]="Breaker"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*DESTRUCTIVE*GRAVITY*GLASS*"
+AttackWords[++intCount]="Void"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*SPACE"
+AttackWords[++intCount]="Silent"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Mobius"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*GRAVITY*"
+AttackWords[++intCount]="Dimension"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Dimensional"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Rift"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*DESTRUCTIVE*GENERAL*"
+AttackWords[++intCount]="Unfolding"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Perpetual"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Sudden"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*SLEEP*"
+AttackWords[++intCount]="End"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*TIME*SLEEP*"
+AttackWords[++intCount]="Genesis"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Genocide"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Anarchy"
+AttackCodes[intCount]=6
+AttackTypes[intCount]="*ROYALNOBLE*"
+AttackWords[++intCount]="Nocturnal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*TIME*SLEEP*"
+AttackWords[++intCount]="Flurry"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Drop"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*GRAVITY*GLASS*"
+AttackWords[++intCount]="Darkness"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*LIGHT*"
+AttackWords[++intCount]="Chaos"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*DESTRUCTIVE*"
+AttackWords[++intCount]="Loop"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*GENERAL*WEB*"
+AttackWords[++intCount]="Micro"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Ribbon"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*WEB*"
+AttackWords[++intCount]="Serene"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*DIVINE*SLEEP*"
+AttackWords[++intCount]="Drain"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESTRUCTIVE*DESERT*POISON*"
+AttackWords[++intCount]="Stopping"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*GENERAL*"
+AttackWords[++intCount]="Edge"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*GENERAL*METAL*CUTTING*AIR*"
+AttackWords[++intCount]="Breeze"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Gust"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Staggering"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*AIR*GENERAL*"
+AttackWords[++intCount]="Break"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*GLASS*"
+AttackWords[++intCount]="Bend"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*GRAVITY*"
+AttackWords[++intCount]="Flux"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*GRAVITY*"
+AttackWords[++intCount]="Wire"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*METAL*WEB*"
+AttackWords[++intCount]="Mini"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Change"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*POISON*"
+AttackWords[++intCount]="Petrify"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*EARTH*POISON*"
+AttackWords[++intCount]="Guardian"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*ROYALNOBLE*AIR*DEFENSE*"
+AttackWords[++intCount]="Hazard"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*POISON*"
+AttackWords[++intCount]="Bio"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*POISON*"
+AttackWords[++intCount]="Aftermath"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*DESTRUCTIVE*POISON*"
+AttackWords[++intCount]="Broken"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*GLASS*"
+AttackWords[++intCount]="Array"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*GENERAL*"
+AttackWords[++intCount]="Shot"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Ravine"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*EARTH*"
+AttackWords[++intCount]="Finishing"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*DESTRUCTIVE*"
+AttackWords[++intCount]="Voice"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Bite"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*DESTRUCTIVE*POISON"
+AttackWords[++intCount]="Surprise"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Cycle"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Cross"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*ROYALNOBLE*GENERAL*"
+AttackWords[++intCount]="Flow"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*"
+AttackWords[++intCount]="Block"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*"
+AttackWords[++intCount]="Airstream"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Miracle"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MYSTIC*"
+AttackWords[++intCount]="Merge"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Demented"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*MIND*"
+AttackWords[++intCount]="Delirium"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*MIND*POISON*"
+AttackWords[++intCount]="Dimentia"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*MIND*"
+AttackWords[++intCount]="Clear"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*AIR*GLASS*"
+AttackWords[++intCount]="Atmosphere"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Medium"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Oxygen"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Dropping"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*AIR*COLDICE*GLASS*"
+AttackWords[++intCount]="Popcicle"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Pillar"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*GENERAL*"
+AttackWords[++intCount]="Hail"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Sleet"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Snow"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Drift"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*DESERT*"
+AttackWords[++intCount]="Blanket"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Slide"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*METAL*GLASS*"
+AttackWords[++intCount]="Erupt"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Geyser"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*"
+AttackWords[++intCount]="Column"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*COLDICE*FIRE*WATER*RANGED*"
+AttackWords[++intCount]="Cry"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SOUND*MENTAL*"
+AttackWords[++intCount]="Bane"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESTRUCTIVE*POISON*"
+AttackWords[++intCount]="Puppet"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MENTAL*WEB*"
+AttackWords[++intCount]="Mindless"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MENTAL*WEB*"
+AttackWords[++intCount]="Gloomy"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MENTAL*LIGHT*"
+AttackWords[++intCount]="Mute"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Reqium"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Reverse"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*MENTAL*GRAVITY*"
+AttackWords[++intCount]="Vorpal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*EVIL*DESTRUCTIVE*POISON*GRAVITY*"
+AttackWords[++intCount]="Memory"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MENTAL*"
+AttackWords[++intCount]="Recall"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MENTAL*GENERAL*"
+AttackWords[++intCount]="Hour"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*SLEEP*"
+AttackWords[++intCount]="Moment"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Reaver"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*EVIL*DESTRUCTIVE*POISON*GLASS*"
+AttackWords[++intCount]="Strings"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MENTAL*GENERAL*WEB*"
+AttackWords[++intCount]="Split"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*MENTAL*DESTRUCTIVE*GRAVITY*GLASS*WEB*"
+AttackWords[++intCount]="Venom"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*POISON*"
+AttackWords[++intCount]="Ruin"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*DESTRUCTIVE*"
+AttackWords[++intCount]="Nightmare"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SLEEP*"
+AttackWords[++intCount]="Limbo"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Agony"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESTRUCTIVE*POISON*"
+AttackWords[++intCount]="Misery"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*POISON*"
+AttackWords[++intCount]="Ball"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Swamp"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*POISON*"
+AttackWords[++intCount]="Vapor"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*AIR*POISON*"
+AttackWords[++intCount]="Fume"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*POISON*AIR*"
+AttackWords[++intCount]="Noxious"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*POISON*"
+AttackWords[++intCount]="Effluvium"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*POISON*AIR*"
+AttackWords[++intCount]="Doom"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*EVIL*DESTRUCTIVE*"
+AttackWords[++intCount]="Fate"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Kismet"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*"
+AttackWords[++intCount]="Creation"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*PLANTS*"
+AttackWords[++intCount]="Flicker"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Flickering"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Shrivel"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*POISON*PLANTS*"
+AttackWords[++intCount]="Chrome"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*METAL*"
+AttackWords[++intCount]="Quicksilver"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*METAL*"
+AttackWords[++intCount]="Tetra"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*METAL*RANGED*"
+AttackWords[++intCount]="Flay"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*METAL*DESTRUCTIVE*GRAVITY*WEB*GLASS*"
+AttackWords[++intCount]="Solid"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*METAL*EARTH*GLASS*"
+AttackWords[++intCount]="Liquid"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*"
+AttackWords[++intCount]="Liquidial"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*METAL*WATER*"
+AttackWords[++intCount]="Serenade"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*SOUND*"
+AttackWords[++intCount]="Minuet"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*SOUND*"
+AttackWords[++intCount]="Rage"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MENTAL*"
+AttackWords[++intCount]="Alloy"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*METAL*"
+AttackWords[++intCount]="Fireball"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*FIRE*"
+AttackWords[++intCount]="Combust"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*FIRE*DESTRUCTIVE*GRAVITY*"
+AttackWords[++intCount]="Violent"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESTRUCTIVE*MENTAL*"
+AttackWords[++intCount]="Timber"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Glade"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Tinder"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Chaparral"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Dryad"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Spore"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Pollen"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Release"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GENERAL*GRAVITY*"
+AttackWords[++intCount]="Glen"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Everglade"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Hollow"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*PLANTS*DESERT*DEFENSE*GLASS*"
+AttackWords[++intCount]="Billowing"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*AIR*"
+AttackWords[++intCount]="Petal"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Bud"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Natural"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Unnatural"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*PLANTS*"
+AttackWords[++intCount]="Wandering"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Lust"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*EVIL*"
+AttackWords[++intCount]="Link"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Paradise"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*TIME*SPACE*"
+AttackWords[++intCount]="Filament"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Celestial"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SPACE*"
+AttackWords[++intCount]="Essence"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*PLANTS*DIVINE*MYSTIC*"
+AttackWords[++intCount]="Avatar"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Hope"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MENTAL*"
+AttackWords[++intCount]="Haunted"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*EVIL*POISON*"
+AttackWords[++intCount]="Legacy"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*ROYALNOBLE*TIME*"
+AttackWords[++intCount]="Short"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GENERAL*"
+AttackWords[++intCount]="Mist"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*AIR*"
+AttackWords[++intCount]="Misty"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WATER*AIR*"
+AttackWords[++intCount]="Stealer"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*EVIL*TIME*"
+AttackWords[++intCount]="Tomb"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*POISON*EVIL*"
+AttackWords[++intCount]="Pit"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*POISON*DESERT*"
+AttackWords[++intCount]="Bog"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*POISON*"
+AttackWords[++intCount]="Banshee"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*MYSTIC*EVIL*"
+AttackWords[++intCount]="Screaming"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SOUND*EVIL*"
+AttackWords[++intCount]="Cool"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*COLDICE*"
+AttackWords[++intCount]="Border"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*"
+AttackWords[++intCount]="Colossus"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*"
+AttackWords[++intCount]="Net"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*WEB*"
+AttackWords[++intCount]="Land"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*EARTH*"
+AttackWords[++intCount]="Desert"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESERT*"
+AttackWords[++intCount]="Sanctuary"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*DEFENSE*"
+AttackWords[++intCount]="Bind"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*TIME*WEB*"
+AttackWords[++intCount]="Binding"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*DEFENSE*WEB*"
+AttackWords[++intCount]="Wrap"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*WEB*"
+AttackWords[++intCount]="Vortex"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*SPACE*"
+AttackWords[++intCount]="Jinx"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*TIME*DEFENSE*"
+AttackWords[++intCount]="Ebb"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*TIME*WATER*"
+AttackWords[++intCount]="Maelstrom"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*WEATHER*"
+AttackWords[++intCount]="Guard"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*"
+AttackWords[++intCount]="Armor"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*"
+AttackWords[++intCount]="Prison"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*"
+AttackWords[++intCount]="Down"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WIND*WEATHER*"
+AttackWords[++intCount]="Burst"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DESTRUCTIVE*"
+AttackWords[++intCount]="Bomb"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*FIRE*DESTRUCTIVE*"
+AttackWords[++intCount]="Mega"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*FIRE*DESTRUCTIVE*"
+AttackWords[++intCount]="Giga"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*FIRE*DESTRUCTIVE*"
+AttackWords[++intCount]="Field"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*GRAVITY*"
+AttackWords[++intCount]="Surf"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*"
+AttackWords[++intCount]="Turbulant"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WATER*WIND*"
+AttackWords[++intCount]="Sin"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*EVIL*"
+AttackWords[++intCount]="Shell"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WATER*DEFENSE*GLASS*"
+AttackWords[++intCount]="Stardust"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SPACE*LIGHT*"
+AttackWords[++intCount]="Reverb"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Blare"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Tune"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Reverberate"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Peel"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Vocal"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Coarse"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*SOUND*"
+AttackWords[++intCount]="Anamnesis"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Anima"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DEFENSE*DESTRUCTIVE*WEATHER*"
+AttackWords[++intCount]="Veracity"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*DIVINE*"
+AttackWords[++intCount]="Collapse"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Crush"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*GLASS*"
+AttackWords[++intCount]="Swell"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Well"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Blur"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Levity"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Accelerate"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Acceleration"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Deccelerate"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Deccerlation"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Ballistic"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Heavy"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Inertia"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Pendulum"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Metronome"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Dive"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*WATER*RANGED*"
+AttackWords[++intCount]="Drive"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Implode"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Implosion"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Pump"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Rush"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Inertia"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Inertial"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Multiply"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Divide"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Triple"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Tetra"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Shiatsu"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Vacuum"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Center"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Static"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*ELECTRIC*"
+AttackWords[++intCount]="Plosion"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Lantern"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*LIGHT*"
+AttackWords[++intCount]="Emobilize"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*GENERAL*"
+AttackWords[++intCount]="Aero"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*AIR*DEFENSE*"
+AttackWords[++intCount]="Compress"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Distention"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Expand"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Fold"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*TIME*"
+AttackWords[++intCount]="Swallow"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*DESERT*"
+AttackWords[++intCount]="Attenuation"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Focus"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*GLASS*"
+AttackWords[++intCount]="Focal"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Fault"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*EARTH*"
+AttackWords[++intCount]="Anti"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Matter"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*SPACE*"
+AttackWords[++intCount]="Dissipate"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Disperse"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Scatter"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*GLASS*"
+AttackWords[++intCount]="Dispel"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GRAVITY*"
+AttackWords[++intCount]="Pierce"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*WEB*METAL*GENERAL*"
+AttackWords[++intCount]="Reflection"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*WATER*"
+AttackWords[++intCount]="Translucent"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Transparent"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Opaque"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Sliver"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Glare"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*LIGHT*"
+AttackWords[++intCount]="Ricochette"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Reaper"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*EVIL*CUTTING*"
+AttackWords[++intCount]="Strike"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*CLOSECOMBAT*"
+AttackWords[++intCount]="Cloud"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*AIR*WEATHER*COLDICE*"
+AttackWords[++intCount]="Plane"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*GRAVITY*MYSTIC*TIME*"
+AttackWords[++intCount]="Crack"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Cracked"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Cube"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Crystiline"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GLASS*DIVINE*LIGHT*"
+AttackWords[++intCount]="Refract"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*LIGHT"
+AttackWords[++intCount]="Refraction"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*LIGHT*"
+AttackWords[++intCount]="Wheel"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Lattice"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*WEB*"
+AttackWords[++intCount]="Crystalize"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*COLDICE*"
+AttackWords[++intCount]="Crystalized"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*GLASS*COLDICE*"
+AttackWords[++intCount]="Lacerate"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Laceration"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*GLASS*"
+AttackWords[++intCount]="Dancing"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Vines"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Doll"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Spread"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*GLASS*"
+AttackWords[++intCount]="Hold"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*DEFENSE*"
+AttackWords[++intCount]="Bondage"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*DEFENSE*"
+AttackWords[++intCount]="Binding"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Knot"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Tube"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Fiber"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Spool"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Run"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Plastic"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Hair"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Strand"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Strands"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Chase"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Extend"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Stretch"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Trip"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Spider"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*POISON*"
+AttackWords[++intCount]="Spider's"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WEB*POISON*"
+AttackWords[++intCount]="Silk"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Silken"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Thread"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Fray"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Frayed"
+AttackCodes[intCount]=1
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Whip"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*CLOSECOMBAT*"
+AttackWords[++intCount]="Root"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*PLANTS*"
+AttackWords[++intCount]="Tail"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Stitch"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*TIME*"
+AttackWords[++intCount]="Bandage"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Cage"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*DEFENSE*"
+AttackWords[++intCount]="Swirl"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Grip"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="Grasp"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+AttackWords[++intCount]="String"
+AttackCodes[intCount]=2
+AttackTypes[intCount]="*WEB*"
+
+
+	//Diagnostic code
+	//for (var intLoop=0;intLoop< intCount;intLoop++)
+	//{
+	//	 if  ((AttackTypes[intLoop].slice(AttackTypes[intLoop].length-1, AttackTypes[intLoop].length))!="*")
+	//	{
+	//		alert(AttackWords[intLoop])
+	//	}
+	//}
+
+
+	function GenNumber(nRange)
+	{
+		var iNumGen;
+		iNumGen = Math.round((Math.random() * nRange))+1;
+
+		if (iNumGen < 1)
+		{
+			iNumGen = GenNumber(nRange);
+		}
+
+		if (iNumGen>nRange)
+		{
+			iNumGen = GenNumber(nRange);
+		}
+
+	    return iNumGen;
+	}
+
+	function GenAttack(iMaximum)
+	{
+		var aWord = new Array(100);
+                var iCurrent, iNumber, bDone, bGot, sGenAttack;
+		bDone = false
+		iCurrent = 0
+		while (bDone==false)
+		{
+			if (iCurrent==0)
+                        {
+                                bGot = false;
+                                while (bGot==false)
+				{
+					iNumber = GenNumber(AttackWords.length-1);
+
+                                        if (AttackCodes[iNumber] != 4)
+					{
+                		                bGot = true
+					}
+					 if (IsUsed(GetUse(),AttackTypes[iNumber])==false)
+					{
+						bGot=false;
+					}
+				}
+                        }
+			else if ((iCurrent+1) >= iMaximum)
+			{
+                                bGot = false;
+                                while (bGot==false)
+				{
+					iNumber = GenNumber(AttackWords.length-1);
+
+                                        if ((AttackCodes[iNumber] & 4)==4)
+					{
+                		                bGot = true
+					}
+					 if (IsUsed(GetUse(),AttackTypes[iNumber])==false)
+					{
+						bGot=false;
+					}
+				}
+			}
+                        else
+                        {
+				bGot = false
+                                while (bGot==false)
+				{
+					iNumber = GenNumber(AttackWords.length-1);
+					if (iCurrent >1)
+					{
+						if (((AttackCodes[aWord[iCurrent-1]] & 1)==1) & ((AttackCodes[aWord[iCurrent-2]] & 1)==1))
+						{
+							if (AttackCodes[iNumber] != 1)
+							{
+								bGot = true;
+							}
+						}
+						else if (AttackCodes[aWord[iCurrent-1]]==2)
+						{
+							if (((AttackCodes[iNumber] & 1)==1) | ((AttackCodes[iNumber] & 4)==4))
+							{
+								bGot=true;
+							}
+						}
+						else
+						{
+							bGot = true;
+						}
+					}
+					else
+					{
+						if (AttackCodes[aWord[iCurrent-1]]==2)
+						{
+							if (AttackCodes[iNumber] !=2)
+							{
+								bGot = true;
+							}
+						}
+						else
+						{
+							bGot = true;
+						}
+					}
+					 if (IsUsed(GetUse(),AttackTypes[iNumber])==false)
+					{
+						bGot=false;
+					}
+				}
+                        }
+
+			aWord[iCurrent] = iNumber
+			iCurrent++;
+			if (iCurrent >1)
+			{
+				if (AttackCodes[aWord[iCurrent-1]]==4)
+				{
+					bDone = true
+				}
+				else
+				{
+					if ((AttackCodes[aWord[iCurrent-1]] & 4)==4)
+					{
+						if (GenNumber(100) < (100*(iCurrent/iMaximum)))
+						{
+							bDone = true;
+						}
+					}
+				}
+				if (iCurrent+1 > iMaximum)
+				{
+					bDone = true;
+				}
+			}
+
+		}
+
+
+		for (var i=0; i<iCurrent;i++)
+		{
+			if (i==0)
+			{
+				sGenAttack=AttackWords[aWord[i]]
+			}
+			else
+			{
+				sGenAttack=sGenAttack+ " " + AttackWords[aWord[i]];
+			}
+		}
+		document.GENFORM.TATTACK.value = sGenAttack;
+
+	}
+
+
+
+	function GetUse()
+	{
+            var aReturn = new Array();
+		var iLooper
+                var iCount =0
+
+		for (iLooper=2;iLooper<document.GENFORM.elements.length;iLooper++)
+		{
+			if (document.GENFORM.elements[iLooper].checked==true)
+			{
+				aReturn[iCount++] = document.GENFORM.elements[iLooper].name
+			}
+		}
+
+		return aReturn
+	}
+
+	function IsUsed(aScanArray, sBaseString)
+	{
+		var iLooper
+		var bReturn
+                var undefined
+		bReturn = false
+
+
+		//Scan through the *'s.  Compare to array via loop.
+
+		if (aScanArray.length == 0)
+		{
+			bReturn=true
+		}
+		else
+		{
+			while (sBaseString.length>1)
+			{
+				var sLook
+				sLook = sBaseString.slice(1, sBaseString.indexOf("*",1));
+				sBaseString = sBaseString.slice(sBaseString.indexOf("*",1), sBaseString.length);
+				for (var intInLoop=0;intInLoop<aScanArray.length;intInLoop++)
+				{
+					if (aScanArray[intInLoop]==sLook)
+						bReturn=true
+				}
+				if (sBaseString.indexOf("*",0)==-1)
+					sBaseString=""
+			}
+		}
+		return bReturn
+	}
+
+	function UseWrapper()
+	{
+		var aHolder = GetUse();
+
+		if (aHolder.length >= 1)
+		{
+			GenAttack(document.GENFORM.AMOUNT.value);
+		}
+		else if (aHolder.length==0)
+		{
+			GenAttack(document.GENFORM.AMOUNT.value);
+		}
+		else
+		{
+			if (aHolder[0] == "GENERAL")
+			{
+				GenAttack(document.GENFORM.AMOUNT.value);
+			}
+			else
+			{
+				alert("If you select a category, select 3 categories.  If you wish to select less than 3 categories, GENERIC must be one you select");
+			}
+		}
+	}
+
+//-->
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<TBODY>    <tr>
+        <td><form name="GENFORM">
+            <table border="0" cellspacing="1">
+<TBODY>                <tr>
+                    <td>
+            <p><font size="1" face="Verdana"><b>ATTACK:</b> </font><br>
+            <textarea name="TATTACK"
+                    rows="1" cols="70" style="border: 2 dotted #FFFFFF"></textarea> 
+            </p>
+ <p><input
+                    type="button" name="BGENERATE"
+                    value="desperate?" onclick="UseWrapper()" style="border: 2 dotted #FFFFFF"><br>
+                    <font size="1" face="Verdana">be aware that
+                    sometimes the generator may take a moment,
+                    the scripting for this program is VERY LONG<br>
+                    for quicker results, select more than one
+                    category and raise the maximum word count to
+                    4 or so, and pick the words you like best if
+                    you want a -4 word attack<br>
+                    also picking generic categories like
+                    &quot;ranged&quot; and
+                    &quot;destructive&quot; will sometimes weild
+                    quicker results<br>
+                    the fastest results come from selecting no
+                    category and just hitting the button</font></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="middle"><font size="2"
+                    face="Verdana">Select Maximum Word Amount: <select
+                    name="AMOUNT" size="1" style="border: 2 dotted #FFFFFF">
+                        <option selected value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select> </font><p><font size="2"
+                    face="Verdana">Select Elements:<br>
+                    <input type="checkbox" name="GENERAL"
+                    value="checked"><b>Generic</b><br>
+                    </font></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                      <div align="center">
+                        <center>
+                        <table border="0" cellspacing="0" cellpadding="0" width="85%">
+                          <tr>
+                            <td width="50" valign="top">
+                              <blockquote>
+                                <p><font size="2"
+                    face="Verdana"><input type="checkbox"
+                    name="AIR" value="checked">Wind<br>
+                    <input type="checkbox" name="DEFENSE"
+                    value="checked">Defense<br>
+                    <input type="checkbox" name="BEAUTY"
+                    value="checked">Beauty<br>
+                    <input type="checkbox" name="CLOSECOMBAT"
+                    value="checked">Force<br>
+                    <input type="checkbox" name="COLDICE"
+                    value="checked">Ice<br>
+                    <input type="checkbox" name="CUTTING"
+                    value="checked">Weapon<br>
+                    <input type="checkbox" name="DESTRUCTIVE"
+                    value="checked">Destructive<br>
+                    <input type="checkbox" name="DIVINE"
+                    value="checked">Divine<br>
+                    <input type="checkbox" name="EARTH"
+                    value="checked">Earth<br>
+                    <input type="checkbox" name="GLASS"
+                    value="checked">Glass</font></p>
+                              </blockquote>
+                            </td>
+                            <td width="33%" valign="top">
+                              <blockquote>
+                                <p><font size="2"
+                    face="Verdana"><input type="checkbox"
+                    name="ELECTRIC" value="checked">Electric<br>
+                    <input type="checkbox" name="EVIL"
+                    value="checked">Evil<br>
+                    <input type="checkbox" name="FIRE"
+                    value="checked">Fire<br>
+                    <input type="checkbox" name="LIGHT"
+                    value="checked">Light/Dark<br>
+                    <input type="checkbox" name="TIME"
+                    value="checked">Time<br>
+                    <input type="checkbox" name="MENTAL"
+                    value="checked">Psychic<br>
+                    <input type="checkbox" name="METAL"
+                    value="checked">Metal<br>
+                    <input type="checkbox" name="MYSTIC"
+                    value="checked">Mystic<br>
+                    <input type="checkbox" name="PLANTS"
+                    value="checked">Nature<br>
+                    <input type="checkbox" name="SLEEP"
+                    value="checked">Sleep<br>
+                    <input type="checkbox" name="GRAVITY"
+                    value="checked">Gravity</font></p>
+                              </blockquote>
+                            </td>
+                            <td width="34%" valign="top">
+                              <blockquote>
+                                <p><font size="2"
+                    face="Verdana"><input type="checkbox"
+                    name="COLOR" value="checked">Color<br>
+                    <input type="checkbox" name="RANGED"
+                    value="checked">Ranged<br>
+                    <input type="checkbox" name="SOUND"
+                    value="checked">Sound<br>
+                    <input type="checkbox" name="ROYALNOBLE"
+                    value="checked">Royal<br>
+                    <input type="checkbox" name="SPACE"
+                    value="checked">Space<br>
+                    <input type="checkbox" name="WATER"
+                    value="checked">Water<br>
+                    <input type="checkbox" name="WEATHER"
+                    value="checked">Weather<br>
+                    <input type="checkbox" name="DESERT"
+                    value="checked">Desert<br>
+                    <input type="checkbox" name="POISON"
+                    value="checked">Poison<br>
+                    <input type="checkbox" name="WEB"
+                    value="checked">Web</font></p>
+                              </blockquote>
+                            </td>
+                          </tr>
+                        </table>
+                        </center>
+                      </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><font size="1" face="Verdana">Desperate?
+                    Well, not really. This is a great resource
+                    for making attacks! It can also be particularly amusing ^.^</font><ul>
+                        <li><font size="1" face="Verdana">You
+                            need to select at least <strong>2</strong>
+                            elements if you want specific
+                            element-influenced attacks. If you
+                            don't care, don't select anything and
+                            just push <em>desperate?</em>, it
+                            will be totally random.<br>
+                            </font></li>
+                        <li><font size="1" face="Verdana">If you're an <strong>Angel Senshi</strong>,
+                          remember you can only have 2 words in your attack. DO
+                          NOT overlap elements, if your element is FIRE don't
+                          select WATER aswell. It is better to select your
+                          element and then a non-specific element (such as <em>ranged</em> 
+                          and <em>color</em>) or <em>generic</em>.<br>
+                            <br>
+                          this generator was not scripted by me, some guy at
+                          seventhsanctum.com did, only i extended it and added
+                          several of my own categories, making it much more
+                          expansive than his. only problem is i added 500+ more
+                          words to the existing 256, which makes the script run
+                          a little slow. quality over speed IMO.
+                            </font></li>
+                    </ul>
+                    </td>
+                </tr>
+</TBODY>            </table>
+        </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
